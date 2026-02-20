@@ -11,7 +11,7 @@ class Essh < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/chenyhd/essh/releases/download/v0.5.1/essh_0.5.1_darwin_amd64.tar.gz"
-      sha256 "580d9043608319eef1b23fc401d1275cf643b3d732a96447e92a5a8a2794b510"
+      sha256 "1f25c03bf72fec9f97fa284c0c33abbb6f46d6b448472c66ac75cc949f8a9715"
 
       def install
         bin.install "essh"
@@ -19,7 +19,7 @@ class Essh < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/chenyhd/essh/releases/download/v0.5.1/essh_0.5.1_darwin_arm64.tar.gz"
-      sha256 "1b8ce80c2a99581d66325180df1234992b11ea221d6c213940648704df440d78"
+      sha256 "77c4d8c7c59879847b6b46ee38bc1d30a21ac37f347c7e78ab7800520245b0f0"
 
       def install
         bin.install "essh"
@@ -30,14 +30,14 @@ class Essh < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/chenyhd/essh/releases/download/v0.5.1/essh_0.5.1_linux_amd64.tar.gz"
-      sha256 "892243e4bf513374cc631cf734c77955d628a22f1916804a7d723c7ca3ae18a6"
+      sha256 "c4d3e8cde1b246f64fc3066ae87a1e0d1926436f32a931373a480cee6f4ba213"
       def install
         bin.install "essh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/chenyhd/essh/releases/download/v0.5.1/essh_0.5.1_linux_arm64.tar.gz"
-      sha256 "631fdb53784452580fd29867f243493c39f9ffde708edbf12f651af7eb82403f"
+      sha256 "20e0c69083c9d60286c5df1ab106fa4218c324419281f612747496adf987a0a1"
       def install
         bin.install "essh"
       end
