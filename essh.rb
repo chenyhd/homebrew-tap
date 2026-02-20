@@ -5,21 +5,21 @@
 class Essh < Formula
   desc "Encrypted SSH client — store server credentials, connect by name"
   homepage "https://github.com/chenyhd/essh"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chenyhd/essh/releases/download/v0.4.1/essh_0.4.1_darwin_amd64.tar.gz"
-      sha256 "2fcc44f2a0a5dbc1166e2ea48c69b5b95897d3e91f87a394bc5b11f94df47bd8"
+      url "https://github.com/chenyhd/essh/releases/download/v0.5.0/essh_0.5.0_darwin_amd64.tar.gz"
+      sha256 "a854febe596b05094c4c99b5907a2b7e2d76f7abca787e2d848a094c2b068ecc"
 
       def install
         bin.install "essh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chenyhd/essh/releases/download/v0.4.1/essh_0.4.1_darwin_arm64.tar.gz"
-      sha256 "67b329734b0815b980a76fa09ecd0596891c76a71f17f34d6845d50f7d3ee18e"
+      url "https://github.com/chenyhd/essh/releases/download/v0.5.0/essh_0.5.0_darwin_arm64.tar.gz"
+      sha256 "401c88ffe90ad468de34ddb35da19ef3e5787db11e0d3af8cc30e3dbf0ef2757"
 
       def install
         bin.install "essh"
@@ -29,15 +29,15 @@ class Essh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chenyhd/essh/releases/download/v0.4.1/essh_0.4.1_linux_amd64.tar.gz"
-      sha256 "02f2a0c4fb75202892ac525740b77c56acfad934f5a9867f3ee917286a906590"
+      url "https://github.com/chenyhd/essh/releases/download/v0.5.0/essh_0.5.0_linux_amd64.tar.gz"
+      sha256 "2155f432be0aa129fbb3495e8db53e3eb85897706d1f12b7367f49c311e70165"
       def install
         bin.install "essh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chenyhd/essh/releases/download/v0.4.1/essh_0.4.1_linux_arm64.tar.gz"
-      sha256 "156af4a8e338ef98e6f76ce52465ca8982f4adcd980191a43a0b12181ff85c23"
+      url "https://github.com/chenyhd/essh/releases/download/v0.5.0/essh_0.5.0_linux_arm64.tar.gz"
+      sha256 "60c0be51fbd4ffbdff64d1f59d74d0ec920ccf5a409555badd303f8b6e7189d3"
       def install
         bin.install "essh"
       end
