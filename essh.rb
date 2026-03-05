@@ -5,21 +5,21 @@
 class Essh < Formula
   desc "Encrypted SSH client — store server credentials, connect by name"
   homepage "https://github.com/chenyhd/essh"
-  version "0.5.2"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chenyhd/essh/releases/download/v0.5.2/essh_0.5.2_darwin_amd64.tar.gz"
-      sha256 "6bf92d8a78526296350fb4f485d36867f2ca49b26ea0a80198cb08ba3dc8ac2b"
+      url "https://github.com/chenyhd/essh/releases/download/v0.6.0/essh_0.6.0_darwin_amd64.tar.gz"
+      sha256 "c76dceed317c65c8f6cc90246a8113083595c22b33d57bb4c5d4c280165ff462"
 
       define_method(:install) do
         bin.install "essh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chenyhd/essh/releases/download/v0.5.2/essh_0.5.2_darwin_arm64.tar.gz"
-      sha256 "336d435ba293c69142a2225027980dea06e0994b8c514b4805b46f47f5f472b8"
+      url "https://github.com/chenyhd/essh/releases/download/v0.6.0/essh_0.6.0_darwin_arm64.tar.gz"
+      sha256 "e0d7fd7273c8df092db38b4ee8cb77cdc92ec13cae117574787c42ee8344077d"
 
       define_method(:install) do
         bin.install "essh"
@@ -29,15 +29,15 @@ class Essh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chenyhd/essh/releases/download/v0.5.2/essh_0.5.2_linux_amd64.tar.gz"
-      sha256 "5ff3776c6727aedcbece082c6ef9fef5a41fc73feab32d91a12c46ad0126651b"
+      url "https://github.com/chenyhd/essh/releases/download/v0.6.0/essh_0.6.0_linux_amd64.tar.gz"
+      sha256 "ef5397296901762f216fab5510d4d90db59a7646bce6fcbc427a027817b6cd91"
       define_method(:install) do
         bin.install "essh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chenyhd/essh/releases/download/v0.5.2/essh_0.5.2_linux_arm64.tar.gz"
-      sha256 "d5951971efc94c3d637546dc7ea6c0bc18925481e4d98b239f091dc6ea22b60d"
+      url "https://github.com/chenyhd/essh/releases/download/v0.6.0/essh_0.6.0_linux_arm64.tar.gz"
+      sha256 "9075b659175199c5dba27b41f3adbadcf8de5d83a9cfb9311e2fafb539dcb2f5"
       define_method(:install) do
         bin.install "essh"
       end
